@@ -6,7 +6,7 @@ Unfortunately, Ruby's built-in Date, Time, and DateTime classes do not keep trac
 For example:
 
 ```ruby
-Date.new.to_s        # => "-4712-01-01"
+Date.new.to_s        # => "1000-01-01"
 Date.new(2000).to_s  # => "2000-01-01"
 ```
 

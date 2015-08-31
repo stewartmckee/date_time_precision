@@ -39,7 +39,7 @@ module DateTimePrecision
     NONE    = 0
   
     # Default values for y,m,d,h,m,s,frac
-    NEW_DEFAULTS = [-4712,1,1,0,0,0,0]
+    NEW_DEFAULTS = [1000,1,1,0,0,0,0]
     
     DATE_ATTRIBUTES = [
       :year,

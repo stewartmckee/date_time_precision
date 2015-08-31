@@ -61,7 +61,7 @@ class Time
     t
   end
 
-  #def self.strptime(str='-4712-01-01', fmt='%F', sg=Date::ITALY)
+  #def self.strptime(str='1000-01-01', fmt='%F', sg=Date::ITALY)
   #  DateTime.strptime(str, fmt, sg).to_time
   #end
 end

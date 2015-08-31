@@ -13,7 +13,7 @@ class Date
     end
     
     alias_method :parse_orig, :parse
-    def parse(str='-4712-01-01T00:00:00+00:00', start=ITALY)
+    def parse(str='1000-01-01T00:00:00+00:00', start=ITALY)
       comp = !block_given?
       elem = _parse(str, comp)
       precision = self.precision(elem)

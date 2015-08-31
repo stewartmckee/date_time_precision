@@ -2,7 +2,7 @@ require 'date_time_precision/patch/common/date'
 
 class Date
   class << self
-    def parse(str='-4712-01-01T00:00:00+00:00', comp=false, sg=Date::ITALY)
+    def parse(str='1000-01-01T00:00:00+00:00', comp=false, sg=Date::ITALY)
       elem = _parse(str, comp)
       precision = DateTimePrecision::precision(elem)
       d = new_by_frags(elem, sg)
@@ -10,7 +10,7 @@ class Date
       d
     end
 
-    def strptime(str='-4712-01-01', fmt='%F', sg=Date::ITALY)
+    def strptime(str='1000-01-01', fmt='%F', sg=Date::ITALY)
       elem = _strptime(str, fmt)
       precision = DateTimePrecision::precision(elem)
       d = new_by_frags(elem, sg)
